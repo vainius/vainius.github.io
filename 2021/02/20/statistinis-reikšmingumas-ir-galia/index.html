@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.81.0" />
+
+
+<title>Statistinis reikšmingumas ir galia - A Hugo website</title>
+<meta property="og:title" content="Statistinis reikšmingumas ir galia - A Hugo website">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/">Pradžia</a></li>
+    
+    <li><a href="/about/">Apie</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">Statistinis reikšmingumas ir galia</h1>
+
+    
+    <span class="article-date">2021-02-20</span>
+    
+
+    <div class="article-content">
+      <h1 id="statistinis-reikšmingumas-ir-galia---per-paprastą-pavyzdį">Statistinis reikšmingumas ir galia - per paprastą pavyzdį</h1>
+<p>Paaiškinsime statistikos sąvokas per pavyzdį, kuris nereikalauja išankstinių žinių. Kalbėsime apie dvi kertines (bet dažnai nesuprastas) sąvokas: statistinį reikšmingumą ir galią.</p>
+<p>Supratus jas, bus aiškiau kaip interpretuoti mokslinių tyrimų rezultatus. Pavyzdžiui, jei mokslininkai tyrė vaisto efektyvumą ir sako, kad &ldquo;skirtumai tarp grupių nebuvo statistiškai reikšmingi&rdquo;. Ką tai reiškia? Kada galime daryti išvadą, kad vaistas neveikia?</p>
+<p>Įrašas ilgas ir susideda iš keturių dalių:</p>
+<ul>
+<li>Įžanga</li>
+<li>Kas gi tas statistinis reikšmingumas?</li>
+<li>Kas gi ta galia?</li>
+<li>Papildomos nuorodos</li>
+</ul>
+<h2 id="įžanga">Įžanga</h2>
+<p>Norime išsiaiškinti, kas labiau mėgsta bulves -  kauniečiai ar vilniečiai. Tie patys principai galioja lyginant bet kokius dydžius tarp dviejų grupių.</p>
+<p>Jei galėtume apklausti kiekvieną miesto gyventoją, viskas būtų paprasta (nereikėtų ir statistinių įrankių). Tačiau visus gyventojus apklausti būtų labai brangu ir užtruktų daug laiko, o mums rūpi sužinoti atsakymą kuo greičiau  - tai yra, norime iš imties spręsti apie visą populiaciją.</p>
+<p>Tarkim, kad turim gyventojų sąrašą ir kompiuteriui parinktus kelis gyventojus iš sąrašo galim su jais susisiekti ir sužinoti, ar mėgsta bulves (turim super-galių!). Tokiu atveju nereikia pergyventi dėl imties reprezentatyvumo.</p>
+<h2 id="tai-kas-gi-tas-statistinis-reikšmingumas">Tai kas gi tas statistinis reikšmingumas?</h2>
+<ol>
+<li>Tarkim, kad apklausėm po 10 žmonių. Kaune 6 iš 10 (60%) pasakė, kad mėgsta bulves, o Vilniuje 5 iš 10 (50%).
+Ar galime daryti išvadą, kad Kaune bulves mėgsta labiau negu Vilniuje? Daugelio intuicija sakytų, kad ne.</li>
+<li>O jeigu apklausėm po 100 žmonių, ir Kaune mėgo 60/100, o Vilniuje 50/100?</li>
+<li>O jeigu po 1000, ir Kaune mėgo 600/1000, o Vilniuje 500/1000?</li>
+</ol>
+<p>Paskutiniu atveju intuicija sako, kad Kaune bulves mėgsta labiau. O antru… sunkoka pasakyti.</p>
+<p>Statistikai tokiu atveju kelia tokį klausimą:</p>
+<blockquote>
+<p>&ldquo;Tarkim kad tarp miestų skirtumų nėra! Kiek tikėtina, kad paėmus tokį imties dydį kaip mūsų, atsitiktinai pamatysim didesnius skirtumus negu užfiksuoti (šiuo atveju ≥10%)?&rdquo;</p>
+</blockquote>
+<p>Ši tikimybė dar vadinama p-reikšme. Darant prielaidą, kad populiacijos nesiskiria, koks šansas su mūsų imties dydžiu pamatyti didesnius skirtumus negu matėm? Jei jis didelis  - rezultatas nėra &ldquo;statistiškai reikšmingas&rdquo;. Dar galima sakyti: &ldquo;skirtumai yra paklaidos ribose&rdquo;, arba &ldquo;skirtumą sunku atskirti nuo triukšmo&rdquo;.</p>
+<p>Kaip suskaičiuoti tokį dydį? Nenaudojant formulių, vienas iš būdų yra įsivaizduoti, kad turim du maišus - kiekvienam po kelis šimtus tūkstančių kamuoliukų. Abiejuose maišuose ant pusės kamuoliukų užrašyta &ldquo;mėgstu&rdquo;, ant pusės &ldquo;nemėgstu&rdquo;  (prisiminkim, kad apskaičiuotume reikšmingumą žiūrim, kas būtų, jei skirtumų iš tiesų nėra! ).</p>
+<p>Mūsų apklausa yra kaip traukimas iš to maišo. Galime ištraukti po 10 kamuoliukų, užrašyti rezultatą ir įdėti juos atgal  -  ir tai pakartoti daug daug kartų. Tada pažiūrėti kaip dažnai užfiksuotas skirtumas tarp maišų buvo didesnis negu kažkoks skaičius (šiuo atveju, ≥10%).</p>
+<p>Teks pasitikėti, kad traukiant 10 kamuoliukų tikimybė, kad skirtumas ≥10% yra  0.65 (užtenka, kad skirtųsi vienu kamuoliuku!), traukiant šimtą  - 0.16, o traukiant tūkstantį  -  mažiau nei 0.0001.</p>
+<p>Daugelyje mokslo sričių (ypač socialiniuose moksluose) reikšmingumo riba yra 0.05. Jeigu p-reikšmė didesnė nei 0.05, sakom, kad &ldquo;sunku atskirti skirtumus nuo paklaidos&rdquo;. Jeigu mažesnė  - rezultatas &ldquo;statistiškai reikšmingas&rdquo;.</p>
+<p>Mūsų pavyzdžiuose tik trečiu atveju sakytume, kad skirtumai tarp Kauno ir Vilniaus statistiškai reikšmingi.</p>
+<p>Sąvoka atrodo paprasta ir ji labai plačiai naudojama. Tačiau dažnai yra neteisingai interpretuojama. Apie tai plačiau kiek vėliau.</p>
+<h2 id="statistinė-galia----kas-gi-tai">Statistinė galia  - kas gi tai?</h2>
+<p>Statistinė galios sąvoka naudinga, kad suprastume, koks imties dydis pakankamas.
+Statistinio reikšmingumo atveju kėlėm klausimą:</p>
+<blockquote>
+<p>&ldquo;tarkim, kad populiacijoj tarp grupių skirtumų nėra, koks šansas, kad savo imtyje gausim didesnius skirtumus, negu gavom? (vien dėl atsitiktinumo)&rdquo;</p>
+</blockquote>
+<p>Galios atveju keliam kitą klausimą:</p>
+<blockquote>
+<p>&ldquo;tarkim, kad skirtumai tarp grupių yra X%, kokia tikimybė, kad su esamu imties dydžiu galėsim užfiksuoti statistiškai reikšmingus rezultatus&rdquo;?</p>
+</blockquote>
+<p>Abiem atvejais keliama hipotezė ir skaičiuojama tikimybė, jeigu ta hipotezė   būtų teisinga:</p>
+<ul>
+<li>Reikšmingumo atveju: hipotezė kad skirtumų nėra, ir žiūrim kiek tikėtinas skirtumų dydis, kurį gavom, tuo atveju.</li>
+<li>Galios atveju: hipotezė, kad skirtumai yra, ir žiūrim, kiek tikėtina, kad rasim &ldquo;statistiškai reikšmingus&rdquo; skirtumus.</li>
+</ul>
+<p>Praktikoje, dažniausiai daroma prielaida apie skirtumų dydį, kurį norim pastebėti, ir tuomet skaičiuojamas minimalus imties dydį, kad statistinė galia būtų bent jau 80% (kuo daugiau tuo didesnis šansas, kad pastebėsim skirtumus, jei išties jie yra).</p>
+<p>Galia priklauso nuo kelių kintamųjų:</p>
+<ol>
+<li>skirtumų, kuriuos norim pastebėti</li>
+<li>imties dydžio</li>
+<li>kiek varijuoja dydis, kurį matuojam</li>
+</ol>
+<p>Kuo didesni skirtumai ir imties dydis - tuo didesnė galia. Kuo mažesnė variacija - tuo didesnė galia.</p>
+<p><strong>Skirtumų dydis:</strong></p>
+<p>Tarkim, kad esam įsitikinę, kad Kaune bulves mėgsta visi, o Vilniuje  -  niekas. Tokiu atveju mums gali užtekti apklausti ir 10 žmonių. Jeigu Kaune 10/10 mėgo bulves, o Vilniuje 0/10 šis skirtumas bus statistiškai reikšmingas, net ir su tokia maža imtimi.</p>
+<p>Tačiau, jei norim pastebėti 1% skirtumus greičiausiai neužteks ir 1000 žmonių. Vienam mieste gavus 501/1000, o kitam 510/1000 toks skirtumas nebūtų statistiškai reikšmingas.
+Kuo mažesnius efektus norime išmatuoti, tuo didesnio imties dydžio reikia.</p>
+<p><strong>Variacija:</strong></p>
+<p>Kai kalbam apie &ldquo;taip&rdquo; / &ldquo;ne&rdquo; kintamųjų matavimą, variacija nėra problema. Bet jeigu matuotume, pavyzdžiui, &ldquo;suvalgytų bulvių kiekį&rdquo; (kuris gali daug skirtis tarp žmonių ir turėti ekstremalių reikšmių) reikėtų didesnio imties dydžio.</p>
+<hr>
+<p>Suvokus &ldquo;galios&rdquo; sąvoka, pasidaro aišku, kad jei rezultatas nėra &ldquo;statistiškai reikšmingas&rdquo;, nereiškia, kad &ldquo;efekto nėra&rdquo;. Svarbu žinoti, kokia buvo statistinė galia. Teisinga interpretacija yra:</p>
+<ul>
+<li>&ldquo;skirtumai tarp miestų gali būti, bet tikėtina, kad jie mažesni negu galėjom išmatuoti su mūsų imtimi&rdquo;</li>
+<li>Arba tiesiog: &ldquo;skirtumai mažesni negu mūsų paklaida&rdquo;
+Jeigu galia buvo labai didelė (tarkim, apklausėm 10,000 žmonių, ir su tokia imtimi, didelė tikimybė, kad pastebėsim net ir 1% skirtumus), tuomet žinom, kad jei skirtumai tarp grupių išties būtų dideli  - greičiausiai būtume juos užfiksavę.</li>
+</ul>
+<h2 id="norintiems-paskaityti-plačiau">Norintiems paskaityti plačiau</h2>
+<p>Prieš kelis metus tarp mokslininkų prasidėjo judėjimas, siekantis permąstyti &ldquo;statistinio reikšmingumo&rdquo; sąvokos naudojimą (vietoj &ldquo;reikšmingumo&rdquo; naudoti kitus įrankius neapibrėžtumui parodyti).</p>
+<p>Tam, kad mokslinis straipsnis būtų išspausdintas, dažnai reikalaujama, kad rezultatai būtų &ldquo;statistiškai reikšmingi&rdquo; naudojant 0.05 p-vertės reikšmingumo kriterijų. Per didelis šio skaičiaus sureikšminimas privedė prie to, kad mažiau dėmesio skiriama kitiems kokybės aspektams (pradedant tiesiog geru tyrimo dizainu).</p>
+<p>Nature straipsnis - <a href="https://www.nature.com/articles/d41586-019-00857-9">&ldquo;Scientists rise up against statistical significance&rdquo;</a> - apie statistinį reikšmingumą ir dažnai pasitaikančias neteisingas jo interpretacijas.</p>
+<p>Nature cituoja tyrimus, kur peržiūrėjus 791 mokslinius straipsnius 402 iš jų buvo padaryta statistinio reikšmingumo interpretacijos klaidų. Ypač, kad &ldquo;reikšmingumo nebuvimas&rdquo; tolygus &ldquo;efekto nebuvimui&rdquo;.</p>
+<p>Taip pat, įdomus Amerikos statistikos asociacijos atsakas į judėjimą &ldquo;atsisakyti statistinio reikšmingumo sąvokos&rdquo; - <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108">&ldquo;ASA Statement on p-Values&rdquo;</a>.</p>
+<p>Asociacija sutinka, kad rezultatai neturėtų būti vertinami pagal vieną kriterijų (statistinį reikšmingumą), bet jų pozicija labiau balansuota  - sąvokos atsisakymas savaime neišspręs kokybės klausimo.</p>
+<h1 id="pabaiga">Pabaiga.</h1>
+<hr>
+<p><em><a href="https://www.facebook.com/permalink.php?story_fbid=771579436788977&amp;id=329926624287596">Facebook įrašas</a>, jei norite palikti komentarą</em></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+
